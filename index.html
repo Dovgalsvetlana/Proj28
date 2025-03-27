@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- Верхняя акция -->
+    <div class="promo-bar">
+        <p>Bestelle mehrere Bücher und erhalte 15% Rabatt mit dem Code <strong>HURRA15</strong></p>
+    </div>
+
+    <!-- Навигация -->
+    <header class="main-header">
+        <div class="header-container">
+            <!-- Логотип -->
+            <div class="logo">
+                <img src="logo.png" alt="Librio Logo">
+            </div>
+
+            <!-- Меню -->
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#">Produkte</a></li>
+                    <li><a href="#">Für wen</a></li>
+                    <li><a href="#">Anlass</a></li>
+                    <li><a href="#">Über Librio</a></li>
+                </ul>
+            </nav>
+
+            <!-- Язык, валюта и корзина -->
+            <div class="header-right">
+                <select>
+                    <option>Deutsch</option>
+                    <option>English</option>
+                </select>
+
+                <select>
+                    <option>CHF</option>
+                    <option>EUR</option>
+                </select>
+
+                <div class="cart">
+                    🛒 CHF 0.00
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <section class="gallery-section">
+        <h2>Unser personalisiertes Buch zur Geburt</h2>
+
+        <div class="gallery-container">
+            <!-- Большая картинка со стрелками -->
+            <div class="main-image-box">
+                <button class="nav-btn left">&#10094;</button>
+
+                <img id="main-image" src="img1.png" alt="Großes Bild">
+
+                <button class="nav-btn right">&#10095;</button>
+            </div>
+
+            <!-- Вертикальный список миниатюр -->
+            <div class="thumbnails">
+                <img class="thumbnail" src="img1.png" alt="Vorschau 1" data-index="0">
+                <img class="thumbnail" src="img2.png" alt="Vorschau 2" data-index="1">
+                <img class="thumbnail" src="img3.png" alt="Vorschau 3" data-index="2">
+                <img class="thumbnail" src="img4.png" alt="Vorschau 4" data-index="3">
+            </div>
+        </div>
+    </section>
+
+
+    <!--    Section after img-->
+    <section class="book-info">
+        <h3>Willkommen auf der Welt</h3>
+        <p class="description">
+            Ein berührendes Buch, das ein Kind auf unserem wundervollen Planeten willkommen heißt. –
+            <span class="price">CHF 39.95</span>
+        </p>
+        <div class="rating">
+            <span class="stars">★★★★★</span>
+            <span class="reviews">(2058 Bewertungen)</span>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Секция с заголовком и формой -->
+    <section class="book-form-section">
+        <!-- Заголовок формы -->
+        <h2>Gestalte dein Buch</h2>
+
+        <!-- Форма для настройки книги -->
+        <form class="book-form" method="get" action="/de/librio-four/mini/_product-configuration-create-token">
+
+            <!-- Поле ввода имени ребёнка -->
+            <input type="text" name="name" placeholder="Name des Kindes" required> <!-- Обязательное поле -->
+
+            <!-- Кнопка выбора: мальчик -->
+            <button type="button" class="btn blue">Junge</button>
+
+            <!-- Кнопка выбора: девочка -->
+            <button type="button" class="btn blue">Mädchen</button>
+
+            <!-- Кнопка отправки формы (начать создание книги) -->
+            <button type="submit" class="btn red">Start</button>
+
+
+
+
+        </form>
+    </section>
+
+
+
+
+    <section class="achievements-section">
+        <!-- Блок 1: Звёзды -->
+        <div class="achievement">
+            <div class="icon">
+                <img src="img5.png" alt="Sterne">
+            </div>
+            <h4>Bewertung 4.9/5</h4>
+            <p>500 000 glückliche Kinder<br><a href="#">Bewertungen lesen</a></p>
+        </div>
+
+        <!-- Блок 2: Посылка -->
+        <div class="achievement">
+            <div class="icon">
+                <img src="img6.png" alt="Lieferung">
+            </div>
+            <h4>Gedruckt in der Schweiz</h4>
+            <p>Bei dir in 1 Woche</p>
+        </div>
+
+        <!-- Блок 3: Ребёнок с родителем -->
+        <div class="achievement">
+            <div class="icon">
+                <img src="img7.png" alt="Altersangabe">
+            </div>
+            <h4>Altersangabe: 0–3 Jahre</h4>
+        </div>
+
+        <!-- Блок 4: Социально и экологично -->
+        <div class="achievement">
+            <div class="icon">
+                <img src="img8.png" alt="Sozial & ökologisch">
+            </div>
+            <h4>Sozial & ökologisch</h4>
+            <p><a href="#">Mehr erfahren</a></p>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- Секция 1: Розовый фон -->
+    <section class="section-wide pink-bg">
+        <div class="section-content">
+            <div class="text-block">
+                <h2>Perfektes Geschenk zur Geburt</h2>
+                <p>„Willkommen auf der Welt“ ist eine fantasievolle Bekanntmachung mit der wundervollen und manchmal
+                    etwas eigenartigen Welt, in die dein neuer kleiner Mensch hineingeboren wurde.</p>
+                <p>Entdecke die wunderbaren Dinge, die dein neues Zuhause für dich bereit hält, triff auf unglaubliche
+                    Lebewesen, die diese Welt bewohnen und begegne den Seltsamsten und Wundervollsten von allen.</p>
+            </div>
+            <div class="image-block">
+                <img src="img10.png" alt="Buchseiten" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция 2: Жёлтый фон с кнопкой -->
+    <section class="section-wide yellow-bg">
+        <div class="section-content reverse">
+            <div class="image-block">
+                <img src="img14.png" alt="Tablet" />
+            </div>
+            <div class="text-block">
+                <h2>Was kann im Buch personalisiert werden?</h2>
+                <p>Geschaffen für kleine Held:innen, ganz egal welcher Herkunft.</p>
+                <p>Beim Erstellen des Buches kannst du Namen und Sprache bestimmen, die Haut- und Haarfarbe aussuchen
+                    sowie das Baby in eines von vier kuscheligen Tier-Outfits kleiden.</p>
+                <p>Um das Geschenk ganz besonders zu machen, kannst du auch die Eltern des Kindes wählen.</p>
+                <button class="cta-btn">Gestalte dein Buch</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция 3: Голубой фон -->
+    <section class="section-wide blue-bg">
+        <div class="section-content">
+            <div class="text-block">
+                <h2>Passend für jede Familie</h2>
+                <p>Ob es Mama und Papa, zwei Mamas, zwei Papas, nur eine Mama oder nur ein Papa sind – das spielt keine
+                    Rolle. In „Willkommen auf der Welt“ hast du die Möglichkeit, die Eltern der Hauptfigur auszusuchen.
+                </p>
+                <p>Die Eltern sind im Buch abstrakt illustriert und im Text wird nicht mit geschlechtsspezifischen
+                    Pronomen auf diese Bezug genommen.</p>
+            </div>
+            <div class="image-block">
+                <img src="img18.png" alt="Familienbild" />
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="section-wide green-bg">
+        <div class="section-content">
+            <!-- Левая часть с изображениями -->
+            <div class="image-block">
+                <img src="img16.png" alt="Poster und Buch" />
+            </div>
+
+            <!-- Правая часть с текстом -->
+            <div class="text-block">
+                <h2>Zauberhaftes Geschenkset zur Geburt</h2>
+                <p>Überrasche die Eltern mit einer persönlichen Geschenkcombo, die noch lange in Erinnerung bleiben
+                    wird. Unsere Geburtsposter für das Kinderzimmer sind die ideale Ergänzung zu unserem Baby-Buch.</p>
+                <p>Wähle ein passendes Motiv, füge Namen und Geburtsdatum hinzu und kreiere ein Poster, das es so nur
+                    einmal gibt. Bestelle das Buch „Willkommen auf der Welt“ und das Poster zusammen und spare
+                    <strong>15 %</strong> mit dem Code <strong>HALLOBABY15</strong>.
+                </p>
+                <button class="cta-btn dark">Jetzt verschenken</button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="reviews-section">
+        <div class="reviews-header">
+            <h2>Was unsere Kund:innen sagen</h2>
+            <p><strong>Hervorragend</strong> ⭐⭐⭐⭐⭐ 4,94 basierend auf <strong>21.097</strong> Bewertungen</p>
+        </div>
+
+        <!-- Обёртка с кнопками -->
+        <div class="slider-container">
+            <button class="slider-btn left" id="prevBtn">&#10094;</button>
+
+            <!-- Область видимости карточек -->
+            <div class="slider-wrapper">
+                <!-- Лента карточек -->
+                <div class="slider-track">
+                    <img src="img21.png" alt="Review 1" />
+                    <img src="img22.png" alt="Review 2" />
+                    <img src="img23.png" alt="Review 3" />
+                    <img src="img25.png" alt="Review 4" />
+                    <img src="img28.png" alt="Review 5" />
+                    <img src="img32.png" alt="Review 7" />
+                    <img src="img33.png" alt="Review 8" />
+                    <img src="img35.png" alt="Review 9" />
+                    <img src="img37.png" alt="Review 10" />
+                    <img src="img39.png" alt="Review 11" />
+                    <img src="img40.png" alt="Review 12" />
+
+
+
+                </div>
+            </div>
+
+            <button class="slider-btn right" id="nextBtn">&#10095;</button>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Секция "Подарок-воспоминание" -->
+    <section class="memory-section">
+        <div class="memory-content"> <!-- Контейнер с флексом: текст + картинка -->
+
+            <!-- Левая часть: текст -->
+            <div class="memory-text">
+                <h2>Bleibende Erinnerungen mit unserem Babygeschenk</h2> <!-- Заголовок -->
+                <p>
+                    Feier die Ankunft eines neuen Lebens mit diesem ganz besonderen Buch!
+                    Mit liebevoll gestalteten Illustrationen und dem Namen des Babys ist dieses Buch
+                    ein berührendes Geschenk zur Geburt oder zur Taufe. Verschenke Freude und Erinnerungen
+                    mit „Willkommen auf der Welt“ – dem persönlichsten Geschenk aller personalisierten Babygeschenke!
+                </p> <!-- Абзац описания -->
+
+                <button class="cta-btn dark">Jetzt verschenken</button> <!-- Кнопка -->
+            </div>
+
+            <!-- Правая часть: картинка с декором -->
+            <div class="memory-image">
+                <div class="photo-wrapper"> <!-- Обёртка фото с рамкой и скотчем -->
+                    <img src="img42.png" alt="Baby" /> <!-- Само изображение ребёнка -->
+
+                    <!-- Элементы скотча -->
+                    <div class="tape tape-top-left"></div> <!-- Левый верхний скотч -->
+                    <div class="tape tape-top-right"></div> <!-- Правый верхний скотч -->
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section class="language-section">
+        <div class="language-container">
+
+            <!-- Левая часть — картинка с персонажами -->
+            <div class="language-image">
+                <img src="img44.png" alt="Tiere mit Sprachen" />
+            </div>
+
+            <!-- Правая часть — текст и кнопка -->
+            <div class="language-text">
+                <h2>Erhältlich in mehreren Sprachen</h2>
+
+                <p>
+                    „Willkommen auf der Welt“ ist in 19 Sprachen und Dialekten erhältlich:
+                    Deutsch, verschiedene Schweizerdeutsche Dialekte, Englisch, Spanisch, Katalanisch,
+                    Baskisch, Portugiesisch, Französisch, Italienisch, Türkisch, Albanisch, Luxemburgisch,
+                    Dänisch, Niederländisch, Norwegisch, Galizisch und Schwedisch.
+                </p>
+
+                <p>
+                    Die Sprache deines Buches kannst du wählen, wenn du die Hauptfigur konfigurierst.
+                </p>
+
+                <button class="cta-btn dark">Jetzt gestalten</button>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section class="quality-section">
+        <div class="quality-container">
+
+            <!-- Левая часть: текст -->
+            <div class="quality-text">
+                <h2>Format und Qualität</h2>
+                <p>
+                    Uns liegt viel daran, dass die Bücher von Librio seinen kleinen Leser:innen lange Freude bereiten.
+                    Deshalb ist uns gute Qualität sehr wichtig. Wir haben ein wunderbares Papier gefunden, das sich
+                    nicht nur gut anfühlt und die Farben gut wiedergibt, sondern auch 100% recycelt ist.
+                    Willkommen auf der Welt umfasst 28 Seiten und ist als Soft- und Hardcover erhältlich.
+                </p>
+
+                <p>
+                    <strong>Dimensionen:</strong><br />
+                    Softback: 25.8 x 21.5 cm<br />
+                    Hardback: 26.5 x 22.2 cm
+                </p>
+            </div>
+
+            <!-- Правая часть: картинка -->
+            <div class="quality-image">
+                <img src="img46.png" alt="Buchqualität" />
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+    <section class="press-section">
+        <h2>Bekannt aus</h2>
+
+        <div class="press-logos">
+            <img src="img45.png" alt="NZZ am Sonntag" />
+            <img src="img47.png" alt="SRF Tagesschau" />
+            <img src="img50.png" alt="Tages Anzeiger" />
+            <img src="img52.png" alt="wirEltern" />
+        </div>
+    </section>
+
+
+
+
+
+    <section class="product-section">
+        <h2>Eine Auswahl unserer Produkte</h2>
+        <div class="card-container">
+            <div class="product-card">
+                <div class="card-header green">Ein Buch für Papa</div>
+                <img src="img65.png" alt="Lea & Papa">
+                <h3>Ein starkes Team</h3>
+                <p>Eine liebevolle Geschichte mit Papa als Helden...</p>
+                <p class="price">CHF 39.95</p>
+                <button>Gestalte dein Buch</button>
+            </div>
+
+            <div class="product-card">
+                <div class="card-header blue">Für das Kinderzimmer</div>
+                <img src="img63.png" alt="Sophia Poster">
+                <h3>Geburtsposter Waldbewohner</h3>
+                <p>Zur Auswahl stehen fünf Motive unserer...</p>
+                <p class="price">CHF 18.00</p>
+                <button>Zu den Art Prints</button>
+            </div>
+
+            <div class="product-card">
+                <div class="card-header orange">Unser Bestseller</div>
+                <img src="img60.png" alt="Wo ist Matteo">
+                <h3>Mein Europa-Wimmelbuch</h3>
+                <p>Ein fantastisches Wimmelbuch für Kinder...</p>
+                <p class="price">CHF 39.95</p>
+                <button>Gestalte dein Buch</button>
+            </div>
+        </div>
+
+        <div class="all-books">
+            <button class="btn dark">Alle Bücher ansehen</button>
+        </div>
+
+
+    </section>
+
+
+    <section class="shipping-info">
+        <h2>Wie lange dauert es?</h2>
+        <p>Alle unsere Produkte werden innerhalb von 2–3 Arbeitstagen für dich gedruckt und versendet.<br>
+        Die geschätzten Lieferzeiten einschließlich der Produktionszeit sind unten aufgeführt:</p>
+      
+        <ul>
+          <li><strong>Deutschland, Schweiz und Großbritannien:</strong> 4 bis 7 Werktage</li>
+          <li><strong>Österreich und restliches Europa:</strong> 7 bis 14 Werktage</li>
+          <li><strong>USA:</strong> 7 bis 10 Werktage</li>
+          <li><strong>Australien:</strong> 5 bis 9 Werktage</li>
+          <li><strong>Rest der Welt:</strong> 8 bis 15 Werktage</li>
+        </ul>
+      
+        <p class="extra-info">
+          Express-Lieferungen in Europa dauern zwischen 4 und 6 Werktagen. Für den Rest der Welt können wir mit DHL Geschwindigkeitsrekorde brechen und in 4–6 Werktagen liefern.
+          Wenn Du etwas weiter weg wohnst, können es aber auch bis zu 9 Werktagen sein.
+        </p>
+      </section>
+
+      
+      <!-- Секция подписки на новостную рассылку -->
+<section class="newsletter-section">
+    <!-- Заголовок -->
+    <h2 class="newsletter-title">
+      Melde dich für den monatlichen Newsletter unserer Waldbewohner an und erhalte Neuigkeiten, Rabatte und Überraschungen aus erster Hand
+    </h2>
+  
+    <!-- Картинка на всю ширину -->
+    <div class="newsletter-image">
+      <img src="img70.png" alt="Fliegendes Papierflugzeug">
+    </div>
+  
+    <!-- Поле ввода и кнопка -->
+    <div class="newsletter-form">
+      <input type="email" placeholder="E-Mail-Adresse" class="email-input">
+      <button class="newsletter-btn">Anmelden</button>
+    </div>
+  </section>   
+
+
+
+
+
+
+
+  <footer class="footer">
+    <div class="footer-columns">
+      <div class="footer-column">
+        <h4>Die Welt von Librio</h4>
+        <ul>
+          <li>Alle personalisierten Kinderbücher</li>
+          <li>Bücher für Neugeborene</li>
+          <li>Bücher für Kinder von 0–3</li>
+          <li>Bücher für Kinder von 3–6</li>
+          <li>Grußkarten</li>
+          <li>Art Prints</li>
+          <li>Farbenfroh</li>
+          <li>Das beste Versteck</li>
+          <li>Mein Weltreise-Wimmelbuch</li>
+          <li>Mein Europareise-Wimmelbuch</li>
+          <li>Bücher für Schulkinder</li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <ul>
+          <li>Dein fantastischer Ausflug mit Globi</li>
+          <li>Willkommen auf der Welt</li>
+          <li>Bereit für die Schule</li>
+          <li>Mein fantabelhaftes Orchester</li>
+          <li>Du, Globi und der kleine Luchs</li>
+          <li>Ein starkes Team</li>
+          <li>Herz an Herz</li>
+          <li>100 Wörter</li>
+          <li>Momente des Glücks</li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Kundendienst</h4>
+        <ul>
+          <li>Kontaktiere uns</li>
+          <li>AGB</li>
+          <li>Datenschutz</li>
+          <li>Impressum</li>
+        </ul>
+        <h4>© Librio AG</h4>
+        <ul>
+          <li>Über uns</li>
+          <li>Unsere Werte</li>
+          <li>Karriere</li>
+          <li>Librio Blog</li>
+          <li>Presse</li>
+        </ul>
+      </div>
+      <div class="footer-column right">
+        <div class="payment-icons">
+          <img src="/img75.png" alt="Zahlmethoden" />
+        </div>
+        <button class="newsletter-btn">Newsletter abonnieren</button>
+      </div>
+      <a href="#kontakt" class="kontakt-btn">
+        <img src="img100.png" alt="Kontakt Icon" class="kontakt-icon">
+        Kontakt
+      </a>
+  </footer>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
